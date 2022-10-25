@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> <!--JQuerry-->
+    <script type="text/javascript" src="index.js"></script> <!--JavaScript-->
+    <link rel="stylesheet" href="index.css"> <!--CSS-->
+</head>
+<body
+    <div class="PiezasJ1">
+        <div class="item"><img src="./dos_o_uno_assets/cero.png" id="0" name="c1" width="75" height ="72"></div>
+        <div class="item"><img src="./dos_o_uno_assets/uno.png" id="1" name="u1" width="75" height ="72" onclick ='moverMano(this);'></div>
+        <div class="item"><img src="./dos_o_uno_assets/dos.png" id="2" name="d1" width="75" height ="72" onclick ='moverMano(this);'></div>
+    
+        <div class="PiezasJ2">
+            <img src="./dos_o_uno_assets/cero.png" id="3" name="c2" width="75" height ="72">
+            <img src="./dos_o_uno_assets/uno.png" id="4" name="u2" width="75" height ="72" onclick ='moverMano(this);'>
+            <img src="./dos_o_uno_assets/dos.png" id="5" name="d2" width="75" height ="72" onclick ='moverMano(this);'>
+        </div>
+
+        <div class="PiezasJ3">
+            <img src="./dos_o_uno_assets/cero.png" id="6" name="c3" width="75" height ="72">
+            <img src="./dos_o_uno_assets/uno.png" id="7" name="u3" width="75" height ="72" onclick ='moverMano(this);'>
+            <img src="./dos_o_uno_assets/dos.png" id="8" name="d3" width="75" height ="72" onclick ='moverMano(this);'>
+        </div>
+    </div>
+
+    </br></br>
+
+    <div class="Manos">
+        <img src="./dos_o_uno_assets/Interrogante.jpg" id="manoJ1" name="c1" width="79" height ="80">
+        <img src="./dos_o_uno_assets/Interrogante.jpg" id="manoJ2" name="u2" width="79" height ="80">
+        <img src="./dos_o_uno_assets/Interrogante.jpg" id="manoJ3" name="d3" width="79" height ="80">
+    </div>
+
+    </br></br>
+    </br></br>
+    </br></br>
+
+    <div class="FichaEsperarTurno">
+        <img src="./dos_o_uno_assets/EsperarTurno.jpg" id="ET" width="79" height ="80" >
+    </div>
+
+    </br></br>
+    </br></br>
+    </br></br>
+
+    <div class="Jugador1">
+        <p id="puntuacionJ1"></p>
+
+        <div class="FichaJugador1">
+            <img src="./dos_o_uno_assets/Jugador1.png" id="personaJ1" name="personaJ1" width="111" height="111">
+        </div>
+
+        <div class="Jugador2">
+            <img src="./dos_o_uno_assets/Jugador2.png" id="personaJ2" name="personaJ2" width="111" height="111">
+        </div>
+
+        <div class="VictoriasJ2">
+            <p id="puntuacionJ2"></p>
+        </div>
+
+        <div class="Jugador3">
+            <img src="./dos_o_uno_assets/Jugador3.png" id="personaJ3" name="personaJ3" width="111" height="111">
+        </div>
+
+        <div class="VictoriasJ3">
+            <p id="puntuacionJ3"></p>
+        </div>
+    </div>
+
+    </br></br>
+
+    <p id="Ganador">Ganador: </p>
+    <button class="btn" onclick ='reset();'>Reset</button>
+    <button class="btn" onclick ='nextRound();'>Siguiente Ronda</button>
+</body>
+</html>
